@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Afonso - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="en">🇺🇸 EN</button>
+            <button class="lang-btn" data-lang="pt">🇧🇷 PT</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">Pedro Afonso's Portfolio</h1>
+                <p data-i18n="hero.subtitle">Backend Developer | Problem Solver | Tech Enthusiast</p>
+                <p class="quote" data-i18n="hero.quote">"Talk is cheap, show me the code." - Linus Torvalds</p>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2 data-i18n="about.title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="about.description">I'm a passionate developer with a strong foundation in back-end technologies. I love creating efficient, scalable solutions and learning new technologies.</p>
+                </div>
+                <div class="skills">
+                    <h3 data-i18n="about.skills">Skills</h3>
+                    <ul>
+                        <li>Rust</li>
+                        <li>C++</li>
+                        <li>C</li>
+                        <li>Python</li>
+                        <li>Go</li>
+                        <li>SQL</li>
+                        <li>Docker</li>
+                        <li>Linux</li>
+                        <li>Git</li>
+                        <li>PostgreSQL</li>
+                        <li>RabbitMQ</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 data-i18n="projects.title">My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3 data-i18n="projects.project1.title">grepbutbetter</h3>
+                    <p data-i18n="projects.project1.description">A Grep clone made in Rust with additional features, like regex and color output.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/pedroafonso18/grepbutbetter" target="_blank"><i class="fab fa-github"></i> <span data-i18n="projects.code">Code</span></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 data-i18n="projects.project2.title">GB-C</h3>
+                    <p data-i18n="projects.project2.description">A GameBoy emulator made in C, still in development.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/pedroafonso18/GB-C" target="_blank"><i class="fab fa-github"></i> <span data-i18n="projects.code">Code</span></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 data-i18n="projects.project3.title">asm-reader</h3>
+                    <p data-i18n="projects.project3.description">A rust program that translates c code to assembly.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/pedroafonso18/asm-reader" target="_blank"><i class="fab fa-github"></i> <span data-i18n="projects.code">Code</span></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 data-i18n="projects.project4.title">c-physics-engine</h3>
+                    <p data-i18n="projects.project4.description">A sample physics engine made in C using raylib.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/pedroafonso18/C-Physics-Engine" target="_blank"><i class="fab fa-github"></i> <span data-i18n="projects.code">Code</span></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 data-i18n="projects.project5.title">rustic-notification</h3>
+                    <p data-i18n="projects.project5.description">A rust application that sends notifications to the user in multiple platforms.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/pedroafonso18/rustic-notification" target="_blank"><i class="fab fa-github"></i> <span data-i18n="projects.code">Code</span></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 data-i18n="projects.project6.title">gupshup_template_creator</h3>
+                    <p data-i18n="projects.project6.description">A rust application that creates gupshup templates for whatsapp without a partners API.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/pedroafonso18/gupshup_template_creator" target="_blank"><i class="fab fa-github"></i> <span data-i18n="projects.code">Code</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 data-i18n="contact.title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="social-links">
+                    <a href="https://github.com/pedroafonso18" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/pedro-afonso-silva-da-costa-97b046211/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p data-i18n="contact.email">Feel free to reach out to me at <a href="mailto:pedroafonsoprogramador@gmail.com">pedroafonsoprogramador@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="footer.copyright">&copy; 2025 Pedro Afonso. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
