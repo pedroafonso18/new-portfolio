@@ -3,124 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pedro Afonso - Backend developer focused on C, C++, Rust, and systems projects in Brazil.">
+    <meta name="theme-color" content="#0b1020">
     <title>Pedro Afonso - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="language-switcher">
-            <button class="lang-btn active" data-lang="en">🇺🇸 EN</button>
-            <button class="lang-btn" data-lang="pt">🇧🇷 PT</button>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home" data-i18n="nav.home">Home</a></li>
-                <li><a href="#about" data-i18n="nav.about">About</a></li>
-                <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
-                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="brand" href="#home" aria-label="Pedro Afonso portfolio home">
+                <span class="brand-mark">PA</span>
+                <span>
+                    <strong>Pedro Afonso</strong>
+                    <small data-i18n="brand.subtitle">Backend developer in Brazil</small>
+                </span>
+            </a>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1 data-i18n="hero.title">Pedro Afonso's Portfolio</h1>
-                <p data-i18n="hero.subtitle">Backend Developer | Problem Solver | Tech Enthusiast</p>
-                <p class="quote" data-i18n="hero.quote">"Talk is cheap, show me the code." - Linus Torvalds</p>
+            <nav class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav.about">About</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="language-switcher" aria-label="Language switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="pt">PT</button>
             </div>
-        </section>
+        </header>
 
-        <section id="about" class="about">
-            <h2 data-i18n="about.title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p data-i18n="about.description">I'm a passionate developer with a strong foundation in back-end technologies. I love creating efficient, scalable solutions and learning new technologies.</p>
+        <main>
+            <section id="home" class="hero section">
+                <div class="hero-content reveal">
+                    <p data-i18n="hero.eyebrow">Thanks for stopping by!</p>
+                    <h1 data-i18n="hero.title">I build software that feels precise, fast, and useful.</h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">Backend developer in Brazil, currently at AltoQi and studying ADS at Ulbra Torres.</p>
+                    <p class="hero-note" data-i18n="hero.note">Main interests: C++, Rust, systems tools, emulation, and performance work.</p>
+                    <a class="hero-link" href="https://github.com/pedroafonso18" target="_blank" rel="noreferrer" data-i18n="hero.link">View GitHub profile</a>
                 </div>
-                <div class="skills">
-                    <h3 data-i18n="about.skills">Skills</h3>
-                    <ul>
-                        <li>Rust</li>
-                        <li>C++</li>
-                        <li>C</li>
-                        <li>Python</li>
-                        <li>Go</li>
-                        <li>SQL</li>
-                        <li>Docker</li>
-                        <li>Linux</li>
-                        <li>Git</li>
-                        <li>PostgreSQL</li>
-                        <li>RabbitMQ</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
 
-        <section id="projects" class="projects">
-            <h2 data-i18n="projects.title">My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3 data-i18n="projects.project1.title">grepbutbetter</h3>
-                    <p data-i18n="projects.project1.description">A Grep clone made in Rust with additional features, like regex and color output.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/pedroafonso18/grepbutbetter" target="_blank"><i class="fab fa-github"></i> <span data-i18n="projects.code">Code</span></a>
+                <aside class="hero-aside reveal" aria-label="Snapshot">
+                    <div class="snapshot-card">
+                        <span class="snapshot-label" data-i18n="hero.snapshotLabel">Snapshot</span>
+                        <strong data-i18n="hero.snapshotTitle">Backend developer · AltoQi</strong>
+                        <p data-i18n="hero.snapshotText">Building native tools and practical projects with a focus on clarity and execution.</p>
                     </div>
-                </div>
-                <div class="project-card">
-                    <h3 data-i18n="projects.project2.title">GB-C</h3>
-                    <p data-i18n="projects.project2.description">A GameBoy emulator made in C, still in development.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/pedroafonso18/GB-C" target="_blank"><i class="fab fa-github"></i> <span data-i18n="projects.code">Code</span></a>
+                    <div class="snapshot-meta">
+                        <span>Brazil</span>
+                        <span>C++</span>
+                        <span>Rust</span>
                     </div>
-                </div>
-                <div class="project-card">
-                    <h3 data-i18n="projects.project3.title">asm-reader</h3>
-                    <p data-i18n="projects.project3.description">A rust program that translates c code to assembly.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/pedroafonso18/asm-reader" target="_blank"><i class="fab fa-github"></i> <span data-i18n="projects.code">Code</span></a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3 data-i18n="projects.project4.title">c-physics-engine</h3>
-                    <p data-i18n="projects.project4.description">A sample physics engine made in C using raylib.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/pedroafonso18/C-Physics-Engine" target="_blank"><i class="fab fa-github"></i> <span data-i18n="projects.code">Code</span></a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3 data-i18n="projects.project5.title">rustic-notification</h3>
-                    <p data-i18n="projects.project5.description">A rust application that sends notifications to the user in multiple platforms.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/pedroafonso18/rustic-notification" target="_blank"><i class="fab fa-github"></i> <span data-i18n="projects.code">Code</span></a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3 data-i18n="projects.project6.title">gupshup_template_creator</h3>
-                    <p data-i18n="projects.project6.description">A rust application that creates gupshup templates for whatsapp without a partners API.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/pedroafonso18/gupshup_template_creator" target="_blank"><i class="fab fa-github"></i> <span data-i18n="projects.code">Code</span></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </aside>
+            </section>
 
-        <section id="contact" class="contact">
-            <h2 data-i18n="contact.title">Get in Touch</h2>
-            <div class="contact-content">
-                <div class="social-links">
-                    <a href="https://github.com/pedroafonso18" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/pedro-afonso-silva-da-costa-97b046211/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <section id="about" class="about section">
+                <div class="section-heading reveal">
+                    <p class="section-kicker" data-i18n="about.kicker">About Me</p>
+                    <h2 data-i18n="about.title">Focused on performance, clarity, and practical solutions.</h2>
+                    <p data-i18n="about.description">I enjoy systems programming, developer tools, emulators, and backend work that asks for careful design. I currently work at AltoQi and study Systems Analysis and Development at Ulbra Torres.</p>
                 </div>
-                <p data-i18n="contact.email">Feel free to reach out to me at <a href="mailto:pedroafonsoprogramador@gmail.com">pedroafonsoprogramador@gmail.com</a></p>
-            </div>
-        </section>
-    </main>
 
-    <footer>
-        <p data-i18n="footer.copyright">&copy; 2025 Pedro Afonso. All rights reserved.</p>
-    </footer>
+                <div class="about-grid">
+                    <article class="about-card reveal">
+                        <h3 data-i18n="about.focusTitle">What I build</h3>
+                        <p data-i18n="about.focusText">Low-level utilities, emulators, developer tools, and backend services with attention to performance and maintainability.</p>
+                        <div class="pill-list">
+                            <span>Systems</span>
+                            <span>Backend</span>
+                            <span>Game dev</span>
+                            <span>Tooling</span>
+                        </div>
+                    </article>
+
+                    <article class="about-card reveal">
+                        <h3 data-i18n="about.stackTitle">Main stack</h3>
+                        <ul class="stack-list">
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>Rust</li>
+                            <li>Go</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>Docker</li>
+                            <li>Linux</li>
+                            <li>PostgreSQL</li>
+                            <li>RabbitMQ</li>
+                        </ul>
+                    </article>
+
+                    <article class="about-card about-wide reveal">
+                        <h3 data-i18n="about.currentTitle">Current direction</h3>
+                        <p data-i18n="about.currentText">My public work shows a clear pattern: native code, terminal tools, emulators, and practical experiments that push me deeper into C++ and Rust.</p>
+                        <div class="status-strip">
+                            <span>AltoQi</span>
+                            <span>ADS</span>
+                            <span>CLI tools</span>
+                            <span>Emulation</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="projects" class="projects section">
+                <div class="section-heading reveal">
+                    <p class="section-kicker" data-i18n="projects.kicker">Projects</p>
+                    <h2 data-i18n="projects.title">Selected work that reflects how I build.</h2>
+                    <p data-i18n="projects.description">A compact selection of repositories that capture my current direction: systems programming, CLI tools, emulation, and performance-oriented experiments.</p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card reveal">
+                        <div class="project-top">
+                            <span class="project-tag">C++</span>
+                            <a href="https://github.com/pedroafonso18/RayTracer" target="_blank" rel="noreferrer">GitHub</a>
+                        </div>
+                        <h3 data-i18n="projects.project1.title">RayTracer</h3>
+                        <p data-i18n="projects.project1.description">A simple ray tracer in C++ that reflects a strong interest in rendering, math, and low-level control.</p>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-top">
+                            <span class="project-tag">C++</span>
+                            <a href="https://github.com/pedroafonso18/TowerDefense" target="_blank" rel="noreferrer">GitHub</a>
+                        </div>
+                        <h3 data-i18n="projects.project2.title">TowerDefense</h3>
+                        <p data-i18n="projects.project2.description">A tower defense game built with C++ and Raylib, showing game logic, state management, and iteration.</p>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-top">
+                            <span class="project-tag">C++</span>
+                            <a href="https://github.com/pedroafonso18/SortingVisualizer" target="_blank" rel="noreferrer">GitHub</a>
+                        </div>
+                        <h3 data-i18n="projects.project3.title">SortingVisualizer</h3>
+                        <p data-i18n="projects.project3.description">A sorting visualizer inspired by algorithm education content, built to make data structures and algorithms tangible.</p>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-top">
+                            <span class="project-tag">Rust</span>
+                            <a href="https://github.com/pedroafonso18/Lensora-CLI" target="_blank" rel="noreferrer">GitHub</a>
+                        </div>
+                        <h3 data-i18n="projects.project4.title">Lensora-CLI</h3>
+                        <p data-i18n="projects.project4.description">A free AI code review CLI that shows interest in developer tooling, workflow automation, and Rust ergonomics.</p>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-top">
+                            <span class="project-tag">C++</span>
+                            <a href="https://github.com/pedroafonso18/MemoryAllocator" target="_blank" rel="noreferrer">GitHub</a>
+                        </div>
+                        <h3 data-i18n="projects.project5.title">MemoryAllocator</h3>
+                        <p data-i18n="projects.project5.description">A fast memory allocator in C++ that points directly to performance, memory layout, and systems-level engineering.</p>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-top">
+                            <span class="project-tag">Rust</span>
+                            <a href="https://github.com/pedroafonso18/Rustic_Chip8" target="_blank" rel="noreferrer">GitHub</a>
+                        </div>
+                        <h3 data-i18n="projects.project6.title">Rustic_Chip8</h3>
+                        <p data-i18n="projects.project6.description">A Chip-8 emulator in Rust that reinforces the systems and emulation side of the portfolio.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="contact section">
+                <div class="contact-panel reveal">
+                    <div class="section-heading compact">
+                        <p class="section-kicker" data-i18n="contact.kicker">Contact</p>
+                        <h2 data-i18n="contact.title">If the work fits, let’s talk.</h2>
+                        <p data-i18n="contact.description">I am open to backend, systems, tooling, and C/C++-heavy projects. Reach out by email or check my public profiles.</p>
+                    </div>
+
+                    <div class="contact-links">
+                        <a class="contact-link" href="https://github.com/pedroafonso18" target="_blank" rel="noreferrer">GitHub</a>
+                        <a class="contact-link" href="https://www.linkedin.com/in/pedro-afonso-silva-da-costa-97b046211/" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a class="contact-link contact-link-accent" href="mailto:pedroafonsoprogramador@gmail.com" data-i18n="contact.emailLabel">Email me</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p data-i18n="footer.copyright">&copy; 2026 Pedro Afonso. All rights reserved.</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
